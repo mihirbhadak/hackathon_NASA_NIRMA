@@ -21,12 +21,12 @@ function Navbar() {
           <ThemeDropdown />
 
           <Button
-            className="source-code-btn flex items-center gap-2"
+            className="chat-ai-btn flex items-center gap-2"
             onClick={() => {
-              router.push("https//github.com");
+              router.push("/chat-with-ai")
             }}
           >
-            {github} Source Code
+            Chat with AI
           </Button>
         </div>
       </div>
