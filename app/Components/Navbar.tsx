@@ -21,6 +21,18 @@ function Navbar() {
 
         <div className="btn-group flex items-center gap-2">
           <ThemeDropdown />
+<<<<<<< HEAD
+=======
+
+          <Button
+            className="chat-ai-btn flex items-center gap-2"
+            onClick={() => {
+              router.push("/chat-with-ai")
+            }}
+          >
+            Chat with AI
+          </Button>
+>>>>>>> b0143d015605e34fbd2aa6b35685478eba96716d
         </div>
       </div>
     </div>
