@@ -6,6 +6,7 @@ import { github } from "../utils/Icons";
 import ThemeDropdown from "./ThemeDropdown/ThemeDropdown";
 import SearchDialog from "./SearchDialog/SearchDialog";
 import { useGlobalContext } from "../context/globalContext";
+import Link from "next/link";
 
 function Navbar() {
   const router = useRouter();
@@ -21,6 +22,11 @@ function Navbar() {
 
         <div className="btn-group flex items-center gap-2">
           <ThemeDropdown />
+          <Link href="/chat-with-ai">
+          <Button>
+          Chat with AI
+          </Button>
+          </Link>
         </div>
       </div>
     </div>
