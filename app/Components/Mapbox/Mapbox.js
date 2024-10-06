@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { MapContainer, TileLayer, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { useGlobalContext } from "@/app/context/globalContext";
+import Link from "next/link";
 
 function FlyToActiveCity({ activeCityCords }) {
   const map = useMap();
@@ -40,6 +41,7 @@ function Mapbox() {
 
   return (
     <div className="flex-1 basis-[50%] border rounded-lg">
+      <Link href="/map">
       <MapContainer
         center={[activeCityCords.lat, activeCityCords.lon]}
         zoom={13}
@@ -54,6 +56,7 @@ function Mapbox() {
 
         <FlyToActiveCity activeCityCords={activeCityCords} />
       </MapContainer>
+      </Link> 
     </div>
   );
 }
