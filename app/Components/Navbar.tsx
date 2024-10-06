@@ -13,21 +13,14 @@ function Navbar() {
 
   return (
     <div className="w-full py-4 flex items-center justify-between">
-      <div className="left"></div>
+      <div className="left text-amber-700 font-bold text-3xl">
+        KURUKSHETRA
+      </div>
       <div className="search-container flex shrink-0 w-full gap-2 sm:w-fit">
         <SearchDialog />
 
         <div className="btn-group flex items-center gap-2">
           <ThemeDropdown />
-
-          <Button
-            className="chat-ai-btn flex items-center gap-2"
-            onClick={() => {
-              router.push("/chat-with-ai")
-            }}
-          >
-            Chat with AI
-          </Button>
         </div>
       </div>
     </div>
